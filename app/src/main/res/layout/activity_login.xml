@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="example@gmail.com"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+
+        />
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password..."
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/username1"
+
+        />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign IN"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/password1"
+        />
+    <Button
+        android:id="@+id/forgetPassword"
+        android:layout_width="match_parent"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        android:layout_height="50dp"
+        android:text="Forget Password"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnLogin"
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/forgetPassword"
+        />
+
+</RelativeLayout>
